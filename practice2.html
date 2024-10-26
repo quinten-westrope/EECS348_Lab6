@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color and Border Control</title>
+    <style>
+        .paragraph-container {
+            border: 2px solid black;
+            padding: 20px;
+            width: 300px;
+        }
+
+        input {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> <div style="color: crimson;">Paragraph</div> <div style="color: blue;">Color</div> and <div style="color: gold;">Border</div></h1>
+
+    <div class="paragraph-container" id="paragraph-box">
+        <p id="custom-paragraph">This is a dummy paragraph. If you input values into the text color, border color, and border width, you can modify me</p>
+    </div>
+
+    <label>Text Color (RGB): </label>
+    <input type="text" id="text-color" placeholder="#,#,#"> <br> <br>
+
+    <label>Border Color (RGB): </label>
+    <input type="text" id="border-color" placeholder="#,#,#"> <br> <br>
+
+    <label>Border Width (px): </label>
+    <input type="number" id="border-width" placeholder="#"> <br> <br>
+
+    <button onclick="applyStyles()">Apply</button>
+
+    <script>
+        function applyStyles() {
+            const paragraph = document.getElementById('custom-paragraph');
+            const paragraphBox = document.getElementById('paragraph-box');
+            
+            const textColor = document.getElementById('text-color').value;
+            const borderColor = document.getElementById('border-color').value;
+            const borderWidth = document.getElementById('border-width').value;
+            
+            if (textColor) {
+                paragraph.style.color = `rgb(${textColor})`;
+            }
+
+            if (borderColor) {
+                paragraphBox.style.borderColor = `rgb(${borderColor})`;
+            }
+
+            if (borderWidth) {
+                paragraphBox.style.borderWidth = `${borderWidth}px`;
+            }
+        }
+    </script>
+
+</body>
+</html>

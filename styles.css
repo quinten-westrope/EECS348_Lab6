@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -110px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.profile-photo {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+p {
+    text-align: center;
+    color: #000000;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+}
+
+h3 {
+    text-align: center;
+    color: #000000;
+}
